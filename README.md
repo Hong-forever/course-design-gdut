@@ -1,2 +1,1 @@
-# mode-recognition
-模式识别作业
+# 模式识别作业
