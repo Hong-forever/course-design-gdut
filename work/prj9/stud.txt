@@ -1,0 +1,4 @@
+The average of the 1 course score is 99.00
+The average of the 2 course score is 99.00
+The average of the 3 course score is 99.00
+And the higest score is 297.00.
