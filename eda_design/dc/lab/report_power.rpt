@@ -1,0 +1,148 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : F_PE
+Version: K-2015.06
+Date   : Thu Jun 26 22:56:43 2025
+****************************************
+
+
+Library(s) Used:
+
+    gtech (File: /opt/Synopsys/Synplify2015/libraries/syn/gtech.db)
+
+
+Operating Conditions: cb13fs120_tsmc_max   Library: cb13fs120_tsmc_max
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+F_PE                   ForQA             cb13fs120_tsmc_max
+BitBrick               ForQA             cb13fs120_tsmc_max
+*ADD_UNS_OP_8_8_8      ForQA             cb13fs120_tsmc_max
+DW01_add_width8        ForQA             cb13fs120_tsmc_max
+DW01_add_width8        ForQA             cb13fs120_tsmc_max
+*ADD_UNS_OP_16_16_16   ForQA             cb13fs120_tsmc_max
+DW01_add_width16       ForQA             cb13fs120_tsmc_max
+DW01_add_width16       ForQA             cb13fs120_tsmc_max
+DW01_add_width16       ForQA             cb13fs120_tsmc_max
+DW01_add_width16       ForQA             cb13fs120_tsmc_max
+DW01_add_width16       ForQA             cb13fs120_tsmc_max
+DW01_add_width16       ForQA             cb13fs120_tsmc_max
+DW01_add_width16       ForQA             cb13fs120_tsmc_max
+DW01_add_width16       ForQA             cb13fs120_tsmc_max
+DW01_add_width16       ForQA             cb13fs120_tsmc_max
+DW01_add_width16       ForQA             cb13fs120_tsmc_max
+DW01_add_width16       ForQA             cb13fs120_tsmc_max
+DW01_add_width16       ForQA             cb13fs120_tsmc_max
+DW01_add_width16       ForQA             cb13fs120_tsmc_max
+DW01_add_width16       ForQA             cb13fs120_tsmc_max
+DW01_add_width8        ForQA             cb13fs120_tsmc_max
+DW01_add_width16       ForQA             cb13fs120_tsmc_max
+*MULT_TC_OP_3_3_4      ForQA             cb13fs120_tsmc_max
+DW02_mult_A_width3_B_width3
+                       ForQA             cb13fs120_tsmc_max
+DW02_mult_A_width3_B_width3
+                       ForQA             cb13fs120_tsmc_max
+DW02_mult_A_width3_B_width3
+                       ForQA             cb13fs120_tsmc_max
+DW02_mult_A_width3_B_width3
+                       ForQA             cb13fs120_tsmc_max
+DW02_mult_A_width3_B_width3
+                       ForQA             cb13fs120_tsmc_max
+DW02_mult_A_width3_B_width3
+                       ForQA             cb13fs120_tsmc_max
+DW02_mult_A_width3_B_width3
+                       ForQA             cb13fs120_tsmc_max
+DW02_mult_A_width3_B_width3
+                       ForQA             cb13fs120_tsmc_max
+DW02_mult_A_width3_B_width3
+                       ForQA             cb13fs120_tsmc_max
+DW02_mult_A_width3_B_width3
+                       ForQA             cb13fs120_tsmc_max
+DW02_mult_A_width3_B_width3
+                       ForQA             cb13fs120_tsmc_max
+DW02_mult_A_width3_B_width3
+                       ForQA             cb13fs120_tsmc_max
+DW02_mult_A_width3_B_width3
+                       ForQA             cb13fs120_tsmc_max
+DW02_mult_A_width3_B_width3
+                       ForQA             cb13fs120_tsmc_max
+DW02_mult_A_width3_B_width3
+                       ForQA             cb13fs120_tsmc_max
+DW02_mult_A_width3_B_width3
+                       ForQA             cb13fs120_tsmc_max
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+F_PE                                   2.23e-02    0.000    0.000 2.23e-02 100.0
+  C173 (*SELECT_OP_3.16_3.1_16)        3.67e-04    0.000    0.000 3.67e-04   1.6
+  add_107 (*ADD_UNS_OP_16_16_16)       8.04e-04    0.000    0.000 8.04e-04   3.6
+  add_43 (*ADD_UNS_OP_16_16_16)        5.19e-04    0.000    0.000 5.19e-04   2.3
+  add_42 (*ADD_UNS_OP_16_16_16)        5.73e-04    0.000    0.000 5.73e-04   2.6
+  add_40 (*ADD_UNS_OP_16_16_16)        2.71e-04    0.000    0.000 2.71e-04   1.2
+  add_39 (*ADD_UNS_OP_16_16_16)        2.37e-04    0.000    0.000 2.37e-04   1.1
+  add_38 (*ADD_UNS_OP_16_16_16)        2.63e-04    0.000    0.000 2.63e-04   1.2
+  add_37 (*ADD_UNS_OP_16_16_16)        2.81e-04    0.000    0.000 2.81e-04   1.3
+  add_105 (*ADD_UNS_OP_8_8_8)          2.64e-04    0.000    0.000 2.64e-04   1.2
+  add_35 (*ADD_UNS_OP_16_16_16)        1.36e-04    0.000    0.000 1.36e-04   0.6
+  add_34 (*ADD_UNS_OP_16_16_16)        1.85e-04    0.000    0.000 1.85e-04   0.8
+  add_33 (*ADD_UNS_OP_16_16_16)        1.36e-04    0.000    0.000 1.36e-04   0.6
+  add_32 (*ADD_UNS_OP_16_16_16)        1.11e-04    0.000    0.000 1.11e-04   0.5
+  add_31 (*ADD_UNS_OP_16_16_16)        1.48e-04    0.000    0.000 1.48e-04   0.7
+  add_30 (*ADD_UNS_OP_16_16_16)        1.27e-04    0.000    0.000 1.27e-04   0.6
+  add_29 (*ADD_UNS_OP_16_16_16)        1.63e-04    0.000    0.000 1.63e-04   0.7
+  add_28 (*ADD_UNS_OP_16_16_16)        1.31e-04    0.000    0.000 1.31e-04   0.6
+  add_26 (*ADD_UNS_OP_8_8_8)           1.21e-04    0.000    0.000 1.21e-04   0.5
+  add_25 (*ADD_UNS_OP_8_8_8)           1.39e-04    0.000    0.000 1.39e-04   0.6
+  bb15 (BitBrick)                      1.05e-03    0.000    0.000 1.05e-03   4.7
+    mult_22 (*MULT_TC_OP_3_3_4)        7.74e-04    0.000    0.000 7.74e-04   3.5
+  bb14 (BitBrick)                      9.90e-04    0.000    0.000 9.90e-04   4.4
+    mult_22 (*MULT_TC_OP_3_3_4)        7.21e-04    0.000    0.000 7.21e-04   3.2
+  bb13 (BitBrick)                      9.95e-04    0.000    0.000 9.95e-04   4.5
+    mult_22 (*MULT_TC_OP_3_3_4)        7.25e-04    0.000    0.000 7.25e-04   3.2
+  bb12 (BitBrick)                      9.84e-04    0.000    0.000 9.84e-04   4.4
+    mult_22 (*MULT_TC_OP_3_3_4)        7.16e-04    0.000    0.000 7.16e-04   3.2
+  bb11 (BitBrick)                      9.77e-04    0.000    0.000 9.77e-04   4.4
+    mult_22 (*MULT_TC_OP_3_3_4)        7.14e-04    0.000    0.000 7.14e-04   3.2
+  bb10 (BitBrick)                      7.90e-04    0.000    0.000 7.90e-04   3.5
+    mult_22 (*MULT_TC_OP_3_3_4)        6.43e-04    0.000    0.000 6.43e-04   2.9
+  bb9 (BitBrick)                       7.97e-04    0.000    0.000 7.97e-04   3.6
+    mult_22 (*MULT_TC_OP_3_3_4)        6.48e-04    0.000    0.000 6.48e-04   2.9
+  bb8 (BitBrick)                       7.87e-04    0.000    0.000 7.87e-04   3.5
+    mult_22 (*MULT_TC_OP_3_3_4)        6.40e-04    0.000    0.000 6.40e-04   2.9
+  bb7 (BitBrick)                       9.77e-04    0.000    0.000 9.77e-04   4.4
+    mult_22 (*MULT_TC_OP_3_3_4)        7.15e-04    0.000    0.000 7.15e-04   3.2
+  bb6 (BitBrick)                       7.93e-04    0.000    0.000 7.93e-04   3.5
+    mult_22 (*MULT_TC_OP_3_3_4)        6.44e-04    0.000    0.000 6.44e-04   2.9
+  bb5 (BitBrick)                       1.01e-03    0.000    0.000 1.01e-03   4.5
+    mult_22 (*MULT_TC_OP_3_3_4)        7.30e-04    0.000    0.000 7.30e-04   3.3
+  bb4 (BitBrick)                       9.68e-04    0.000    0.000 9.68e-04   4.3
+    mult_22 (*MULT_TC_OP_3_3_4)        6.86e-04    0.000    0.000 6.86e-04   3.1
+  bb3 (BitBrick)                       9.72e-04    0.000    0.000 9.72e-04   4.4
+    mult_22 (*MULT_TC_OP_3_3_4)        7.11e-04    0.000    0.000 7.11e-04   3.2
+  bb2 (BitBrick)                       7.89e-04    0.000    0.000 7.89e-04   3.5
+    mult_22 (*MULT_TC_OP_3_3_4)        6.42e-04    0.000    0.000 6.42e-04   2.9
+  bb1 (BitBrick)                       9.80e-04    0.000    0.000 9.80e-04   4.4
+    mult_22 (*MULT_TC_OP_3_3_4)        6.95e-04    0.000    0.000 6.95e-04   3.1
+  bb0 (BitBrick)                       1.05e-03    0.000    0.000 1.05e-03   4.7
+    mult_22 (*MULT_TC_OP_3_3_4)        7.19e-04    0.000    0.000 7.19e-04   3.2
+1

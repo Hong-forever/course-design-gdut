@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -slack_lesser_than 0.00
+        -max_paths 10
+Design : F_PE
+Version: L-2016.03-SP1
+Date   : Mon Jun 23 17:47:59 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: cb13fs120_tsmc_max   Library: cb13fs120_tsmc_max
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : -40/25/125
+
+Information: Percent of Arnoldi-based delays = 11.52%
+No paths.
+
+1

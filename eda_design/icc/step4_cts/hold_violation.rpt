@@ -1,0 +1,26 @@
+Warning: Worst timing paths might not be returned. (TIM-104)
+Warning: Clock network timing may not be up-to-date since only 83.333336 percentage of clock nets are routed. (TIM-233)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -slack_lesser_than 0.00
+        -max_paths 10
+Design : F_PE
+Version: L-2016.03-SP1
+Date   : Mon Jun 23 17:46:10 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: cb13fs120_tsmc_min   Library: cb13fs120_tsmc_min
+	Parasitic source    : LPE
+	Parasitic mode      : RealRVirtualC
+	Extraction mode     : MIN_MAX
+	Extraction derating : -40/25/125
+
+Information: Percent of Arnoldi-based delays =  7.84%
+No paths.
+
+1

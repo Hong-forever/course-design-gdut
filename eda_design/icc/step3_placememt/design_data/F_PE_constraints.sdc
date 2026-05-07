@@ -1,0 +1,50 @@
+###################################################################
+
+# Created by write_sdc on Mon Jun 23 17:37:07 2025
+
+###################################################################
+set sdc_version 2.0
+
+set_units -time ns -resistance kOhm -capacitance pF -voltage V -current uA
+create_clock [get_ports clk]  -period 3.8  -waveform {0 1.9}
+set_clock_uncertainty -setup 0.1  [get_clocks clk]
+set_clock_transition -max -rise 0.1 [get_clocks clk]
+group_path -name BITBRICK  -through [list [get_pins {bb0/product[0]}] [get_pins {bb0/product[1]}] [get_pins {bb0/product[2]}] [get_pins {bb0/product[3]}] [get_pins {bb1/product[0]}] [get_pins {bb1/product[1]}] [get_pins {bb1/product[2]}] [get_pins {bb1/product[3]}] [get_pins {bb2/product[0]}] [get_pins {bb2/product[1]}] [get_pins {bb2/product[2]}] [get_pins {bb2/product[3]}] [get_pins {bb3/product[0]}] [get_pins {bb3/product[1]}] [get_pins {bb3/product[2]}] [get_pins {bb3/product[3]}] [get_pins {bb4/product[0]}] [get_pins {bb4/product[1]}] [get_pins {bb4/product[2]}] [get_pins {bb4/product[3]}] [get_pins {bb5/product[0]}] [get_pins {bb5/product[1]}] [get_pins {bb5/product[2]}] [get_pins {bb5/product[3]}] [get_pins {bb6/product[0]}] [get_pins {bb6/product[1]}] [get_pins {bb6/product[2]}] [get_pins {bb6/product[3]}] [get_pins {bb7/product[0]}] [get_pins {bb7/product[1]}] [get_pins {bb7/product[2]}] [get_pins {bb7/product[3]}] [get_pins {bb8/product[0]}] [get_pins {bb8/product[1]}] [get_pins {bb8/product[2]}] [get_pins {bb8/product[3]}] [get_pins {bb9/product[0]}] [get_pins {bb9/product[1]}] [get_pins {bb9/product[2]}] [get_pins {bb9/product[3]}] [get_pins {bb10/product[0]}] [get_pins {bb10/product[1]}] [get_pins {bb10/product[2]}] [get_pins {bb10/product[3]}] [get_pins {bb11/product[0]}] [get_pins {bb11/product[1]}] [get_pins {bb11/product[2]}] [get_pins {bb11/product[3]}] [get_pins {bb12/product[0]}] [get_pins {bb12/product[1]}] [get_pins {bb12/product[2]}] [get_pins {bb12/product[3]}] [get_pins {bb13/product[0]}] [get_pins {bb13/product[1]}] [get_pins {bb13/product[2]}] [get_pins {bb13/product[3]}] [get_pins {bb14/product[0]}] [get_pins {bb14/product[1]}] [get_pins {bb14/product[2]}] [get_pins {bb14/product[3]}] [get_pins {bb15/product[0]}] [get_pins {bb15/product[1]}] [get_pins {bb15/product[2]}] [get_pins {bb15/product[3]}]]
+group_path -name INPUTS  -from [list [get_ports clk] [get_ports {a[7]}] [get_ports {a[6]}] [get_ports {a[5]}] [get_ports {a[4]}] [get_ports {a[3]}] [get_ports {a[2]}] [get_ports {a[1]}] [get_ports {a[0]}] [get_ports {b[7]}] [get_ports {b[6]}] [get_ports {b[5]}] [get_ports {b[4]}] [get_ports {b[3]}] [get_ports {b[2]}] [get_ports {b[1]}] [get_ports {b[0]}] [get_ports s_a] [get_ports s_b] [get_ports {bitwidth[1]}] [get_ports {bitwidth[0]}]]
+group_path -name OUTPUTS  -to [list [get_ports {result[15]}] [get_ports {result[14]}] [get_ports {result[13]}] [get_ports {result[12]}] [get_ports {result[11]}] [get_ports {result[10]}] [get_ports {result[9]}] [get_ports {result[8]}] [get_ports {result[7]}] [get_ports {result[6]}] [get_ports {result[5]}] [get_ports {result[4]}] [get_ports {result[3]}] [get_ports {result[2]}] [get_ports {result[1]}] [get_ports {result[0]}]]
+set_input_delay -clock clk  0.1  [get_ports {a[7]}]
+set_input_delay -clock clk  0.1  [get_ports {a[6]}]
+set_input_delay -clock clk  0.1  [get_ports {a[5]}]
+set_input_delay -clock clk  0.1  [get_ports {a[4]}]
+set_input_delay -clock clk  0.1  [get_ports {a[3]}]
+set_input_delay -clock clk  0.1  [get_ports {a[2]}]
+set_input_delay -clock clk  0.1  [get_ports {a[1]}]
+set_input_delay -clock clk  0.1  [get_ports {a[0]}]
+set_input_delay -clock clk  0.1  [get_ports {b[7]}]
+set_input_delay -clock clk  0.1  [get_ports {b[6]}]
+set_input_delay -clock clk  0.1  [get_ports {b[5]}]
+set_input_delay -clock clk  0.1  [get_ports {b[4]}]
+set_input_delay -clock clk  0.1  [get_ports {b[3]}]
+set_input_delay -clock clk  0.1  [get_ports {b[2]}]
+set_input_delay -clock clk  0.1  [get_ports {b[1]}]
+set_input_delay -clock clk  0.1  [get_ports {b[0]}]
+set_input_delay -clock clk  0.1  [get_ports s_a]
+set_input_delay -clock clk  0.1  [get_ports s_b]
+set_input_delay -clock clk  0.1  [get_ports {bitwidth[1]}]
+set_input_delay -clock clk  0.1  [get_ports {bitwidth[0]}]
+set_output_delay -clock clk  0.1  [get_ports {result[15]}]
+set_output_delay -clock clk  0.1  [get_ports {result[14]}]
+set_output_delay -clock clk  0.1  [get_ports {result[13]}]
+set_output_delay -clock clk  0.1  [get_ports {result[12]}]
+set_output_delay -clock clk  0.1  [get_ports {result[11]}]
+set_output_delay -clock clk  0.1  [get_ports {result[10]}]
+set_output_delay -clock clk  0.1  [get_ports {result[9]}]
+set_output_delay -clock clk  0.1  [get_ports {result[8]}]
+set_output_delay -clock clk  0.1  [get_ports {result[7]}]
+set_output_delay -clock clk  0.1  [get_ports {result[6]}]
+set_output_delay -clock clk  0.1  [get_ports {result[5]}]
+set_output_delay -clock clk  0.1  [get_ports {result[4]}]
+set_output_delay -clock clk  0.1  [get_ports {result[3]}]
+set_output_delay -clock clk  0.1  [get_ports {result[2]}]
+set_output_delay -clock clk  0.1  [get_ports {result[1]}]
+set_output_delay -clock clk  0.1  [get_ports {result[0]}]

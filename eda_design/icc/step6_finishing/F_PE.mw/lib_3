@@ -1,0 +1,207 @@
+$ 
+$$$$ Combo ITF $$$$
+$ 
+$ Cap Unit: 1e-12 F
+$ Res Unit: 1000 ohm
+$ 
+$ 
+$$ begin_min_ITF
+
+TECHNOLOGY=tsmc13l6_min_xo
+
+DIELECTRIC pass3 { THICKNESS=0.4 ER=8.1 }
+DIELECTRIC pass2 { THICKNESS=0.4 ER=4.2 }
+DIELECTRIC pass1 { THICKNESS=0.075 ER=8.1 }
+DIELECTRIC cm6_extra1 { THICKNESS=0.75 ER=4.2 }
+DIELECTRIC cm6_extra2 { THICKNESS=0.03 ER=8.1 }
+DIELECTRIC cm6_extra3 { THICKNESS=0.12 ER=4.2 }
+CONDUCTOR cm6 { THICKNESS=0.90 WMIN=0.44 SMIN=0.46 RPSQ=0.015}
+DIELECTRIC diel6d { THICKNESS=0.6337 ER=4.2 }
+DIELECTRIC diel6e { THICKNESS=0.0523 ER=8.1 }
+DIELECTRIC cm5_extra1 { THICKNESS=0.23 ER=3.7 }
+DIELECTRIC cm5_extra2 { THICKNESS=0.03 ER=8.1 }
+DIELECTRIC cm5_extra3 { THICKNESS=0.09 ER=3.7 }
+CONDUCTOR cm5 { THICKNESS=0.35 WMIN=0.40 SMIN=0.40 RPSQ=0.043}
+DIELECTRIC diel5d { THICKNESS=0.4223 ER=3.7 }
+DIELECTRIC diel5e { THICKNESS=0.0523 ER=8.1 }
+DIELECTRIC cm4_extra1 { THICKNESS=0.23 ER=3.7 }
+DIELECTRIC cm4_extra2 { THICKNESS=0.03 ER=8.1 }
+DIELECTRIC cm4_extra3 { THICKNESS=0.09 ER=3.7 }
+CONDUCTOR cm4 { THICKNESS=0.35 WMIN=0.20 SMIN=0.21 RPSQ=0.043}
+DIELECTRIC diel4d { THICKNESS=0.4223 ER=3.7 }
+DIELECTRIC diel4e { THICKNESS=0.0523 ER=8.1 }
+DIELECTRIC cm3_extra1 { THICKNESS=0.23 ER=3.7 }
+DIELECTRIC cm3_extra2 { THICKNESS=0.03 ER=8.1 }
+DIELECTRIC cm3_extra3 { THICKNESS=0.09 ER=3.7 }
+CONDUCTOR cm3 { THICKNESS=0.35 WMIN=0.20 SMIN=0.21 RPSQ=0.043}
+DIELECTRIC diel3d { THICKNESS=0.4223 ER=3.7 }
+DIELECTRIC diel3e { THICKNESS=0.0523 ER=8.1 }
+DIELECTRIC cm2_extra1 { THICKNESS=0.23 ER=3.7 }
+DIELECTRIC cm2_extra2 { THICKNESS=0.03 ER=8.1 }
+DIELECTRIC cm2_extra3 { THICKNESS=0.09 ER=3.7 }
+CONDUCTOR cm2 { THICKNESS=0.35 WMIN=0.20 SMIN=0.21 RPSQ=0.043}
+DIELECTRIC diel2d { THICKNESS=0.4223 ER=3.7 }
+DIELECTRIC diel2e { THICKNESS=0.0523 ER=8.1 }
+DIELECTRIC cm_extra1 { THICKNESS=0.17 ER=3.7 }
+DIELECTRIC cm_extra2 { THICKNESS=0.03 ER=8.1 }
+DIELECTRIC cm_extra3 { THICKNESS=0.06 ER=4.2 }
+CONDUCTOR cm { THICKNESS=0.26 WMIN=0.16 SMIN=0.18 RPSQ=0.059}
+DIELECTRIC diel1d { THICKNESS=0.545 ER=4.2 }
+CONDUCTOR poly { THICKNESS=0.18 WMIN=0.13 SMIN=0.20 RPSQ=3.755}
+DIELECTRIC fox_b { THICKNESS=0.018103 ER=3.9 }
+CONDUCTOR gate { THICKNESS=0.18 WMIN=0.13 SMIN=0.20 RPSQ=3.755 IS_GATE}
+DIELECTRIC fox_a { THICKNESS=0.422897 ER=3.9 }
+
+VIA via5  { 
+       FROM=cm5 
+       TO=cm6
+       RHO = 0.0448
+}
+VIA via4  { 
+       FROM=cm4 
+       TO=cm5
+       RHO = 0.064
+}
+VIA via3  { 
+       FROM=cm3 
+       TO=cm4
+       RHO = 0.01444
+}
+VIA via2  { 
+       FROM=cm2 
+       TO=cm3
+       RHO = 0.01444
+}
+VIA via1  { 
+       FROM=cm 
+       TO=cm2
+       RHO = 0.01444
+}
+VIA poly_con { 
+       FROM=poly 
+       TO=cm
+       RHO = 0.158592
+}
+VIA sub_con  {
+       FROM=SUBSTRATE
+       TO=cm
+       RHO = 0.183808
+}
+
+$$ end_min_ITF
+$ 
+$$ begin_max_ITF
+
+TECHNOLOGY=tsmc13l6_max_xo
+
+DIELECTRIC pass3 { THICKNESS=0.4 ER=8.1 }
+DIELECTRIC pass2 { THICKNESS=0.4 ER=4.2 }
+DIELECTRIC pass1 { THICKNESS=0.075 ER=8.1 }
+DIELECTRIC cm6_extra1 { THICKNESS=0.75 ER=4.2 }
+DIELECTRIC cm6_extra2 { THICKNESS=0.03 ER=8.1 }
+DIELECTRIC cm6_extra3 { THICKNESS=0.12 ER=4.2 }
+CONDUCTOR cm6 { THICKNESS=0.90 WMIN=0.44 SMIN=0.46 RPSQ=0.027}
+DIELECTRIC diel6d { THICKNESS=0.5663 ER=4.2 }
+DIELECTRIC diel6e { THICKNESS=0.0477 ER=8.1 }
+DIELECTRIC cm5_extra1 { THICKNESS=0.23 ER=3.7 }
+DIELECTRIC cm5_extra2 { THICKNESS=0.03 ER=8.1 }
+DIELECTRIC cm5_extra3 { THICKNESS=0.09 ER=3.7 }
+CONDUCTOR cm5 { THICKNESS=0.35 WMIN=0.40 SMIN=0.40 RPSQ=0.081}
+DIELECTRIC diel5d { THICKNESS=0.3777 ER=3.7 }
+DIELECTRIC diel5e { THICKNESS=0.0477 ER=8.1 }
+DIELECTRIC cm4_extra1 { THICKNESS=0.23 ER=3.7 }
+DIELECTRIC cm4_extra2 { THICKNESS=0.03 ER=8.1 }
+DIELECTRIC cm4_extra3 { THICKNESS=0.09 ER=3.7 }
+CONDUCTOR cm4 { THICKNESS=0.35 WMIN=0.20 SMIN=0.21 RPSQ=0.081}
+DIELECTRIC diel4d { THICKNESS=0.3777 ER=3.7 }
+DIELECTRIC diel4e { THICKNESS=0.0477 ER=8.1 }
+DIELECTRIC cm3_extra1 { THICKNESS=0.23 ER=3.7 }
+DIELECTRIC cm3_extra2 { THICKNESS=0.03 ER=8.1 }
+DIELECTRIC cm3_extra3 { THICKNESS=0.09 ER=3.7 }
+CONDUCTOR cm3 { THICKNESS=0.35 WMIN=0.20 SMIN=0.21 RPSQ=0.081}
+DIELECTRIC diel3d { THICKNESS=0.3777 ER=3.7 }
+DIELECTRIC diel3e { THICKNESS=0.0477 ER=8.1 }
+DIELECTRIC cm2_extra1 { THICKNESS=0.23 ER=3.7 }
+DIELECTRIC cm2_extra2 { THICKNESS=0.03 ER=8.1 }
+DIELECTRIC cm2_extra3 { THICKNESS=0.09 ER=3.7 }
+CONDUCTOR cm2 { THICKNESS=0.35 WMIN=0.20 SMIN=0.21 RPSQ=0.081}
+DIELECTRIC diel2d { THICKNESS=0.3777 ER=3.7 }
+DIELECTRIC diel2e { THICKNESS=0.0477 ER=8.1 }
+DIELECTRIC cm_extra1 { THICKNESS=0.17 ER=3.7 }
+DIELECTRIC cm_extra2 { THICKNESS=0.03 ER=8.1 }
+DIELECTRIC cm_extra3 { THICKNESS=0.06 ER=4.2 }
+CONDUCTOR cm { THICKNESS=0.26 WMIN=0.16 SMIN=0.18 RPSQ=0.109}
+DIELECTRIC diel1d { THICKNESS=0.435 ER=4.2 }
+CONDUCTOR poly { THICKNESS=0.18 WMIN=0.13 SMIN=0.20 RPSQ=10.965}
+DIELECTRIC fox_b { THICKNESS=0.016237 ER=3.9 }
+CONDUCTOR gate { THICKNESS=0.18 WMIN=0.13 SMIN=0.20 RPSQ=10.965 IS_GATE}
+DIELECTRIC fox_a { THICKNESS=0.382763 ER=3.9 }
+
+VIA via5  { 
+       FROM=cm5 
+       TO=cm6
+       RHO = 0.0832
+}
+VIA via4  { 
+       FROM=cm4 
+       TO=cm5
+       RHO = 0.256
+}
+VIA via3  { 
+       FROM=cm3 
+       TO=cm4
+       RHO = 0.05776
+}
+VIA via2  { 
+       FROM=cm2 
+       TO=cm3
+       RHO = 0.05776
+}
+VIA via1  { 
+       FROM=cm 
+       TO=cm2
+       RHO = 0.05776
+}
+VIA poly_con { 
+       FROM=poly 
+       TO=cm
+       RHO = 0.40896
+}
+VIA sub_con  {
+       FROM=SUBSTRATE
+       TO=cm
+       RHO = 0.551936
+}
+
+$$ end_max_ITF
+$ 
+$$ begin_mapping_file
+$ conducting_layers
+$ 
+$ *runset layers in hercules CONNECT      physical layers in ITF file
+$ *(database layer)  			(grd layer)
+$       
+$   poly                                  poly
+$   metal1				cm
+$   metal2				cm2
+$   metal3				cm3
+$   metal4				cm4
+$   metal5				cm5
+$   metal6				cm6
+$ 
+$ via_layers
+$   via1					via1
+$   via2					via2
+$   via3					via3
+$   via4					via4
+$   via5					via5
+$ 
+$ 
+$ marker_layers
+$ 
+$ 
+$ remove_layers
+$ 
+$ 
+$ 
+$$ end_mapping_file

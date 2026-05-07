@@ -1,0 +1,129 @@
+ 
+****************************************
+Report : area
+Design : F_PE
+Version: K-2015.06
+Date   : Thu Jun 26 22:56:43 2025
+****************************************
+
+Library(s) Used:
+
+    gtech (File: /opt/Synopsys/Synplify2015/libraries/syn/gtech.db)
+
+Number of ports:                         2201
+Number of nets:                          4525
+Number of cells:                         1971
+Number of combinational cells:           1248
+Number of sequential cells:               639
+Number of macros/black boxes:               0
+Number of buf/inv:                        198
+Number of references:                       9
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:             925.519391
+
+Total cell area:                     0.000000
+Total area:                        925.519391
+
+Information: This design contains unmapped logic. (RPT-7)
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------------------------
+F_PE                                 0.0000      0.0    0.0000     0.0000  0.0000  F_PE
+add_105                              0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_8_8_8
+add_105/*cell*117                    0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width8
+add_107                              0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+add_107/*cell*120                    0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+add_25                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_8_8_8
+add_25/*cell*69                      0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width8
+add_26                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_8_8_8
+add_26/*cell*72                      0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width8
+add_28                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+add_28/*cell*75                      0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+add_29                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+add_29/*cell*78                      0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+add_30                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+add_30/*cell*81                      0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+add_31                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+add_31/*cell*84                      0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+add_32                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+add_32/*cell*87                      0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+add_33                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+add_33/*cell*90                      0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+add_34                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+add_34/*cell*93                      0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+add_35                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+add_35/*cell*96                      0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+add_37                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+add_37/*cell*99                      0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+add_38                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+add_38/*cell*102                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+add_39                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+add_39/*cell*105                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+add_40                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+add_40/*cell*108                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+add_42                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+add_42/*cell*111                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+add_43                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+add_43/*cell*114                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+bb0                                  0.0000      0.0    0.0000     0.0000  0.0000  BitBrick
+bb0/mult_22                          0.0000      0.0    0.0000     0.0000  0.0000  *MULT_TC_OP_3_3_4
+bb0/mult_22/*cell*127                0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult_A_width3_B_width3
+bb1                                  0.0000      0.0    0.0000     0.0000  0.0000  BitBrick
+bb1/mult_22                          0.0000      0.0    0.0000     0.0000  0.0000  *MULT_TC_OP_3_3_4
+bb1/mult_22/*cell*137                0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult_A_width3_B_width3
+bb10                                 0.0000      0.0    0.0000     0.0000  0.0000  BitBrick
+bb10/mult_22                         0.0000      0.0    0.0000     0.0000  0.0000  *MULT_TC_OP_3_3_4
+bb10/mult_22/*cell*227               0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult_A_width3_B_width3
+bb11                                 0.0000      0.0    0.0000     0.0000  0.0000  BitBrick
+bb11/mult_22                         0.0000      0.0    0.0000     0.0000  0.0000  *MULT_TC_OP_3_3_4
+bb11/mult_22/*cell*237               0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult_A_width3_B_width3
+bb12                                 0.0000      0.0    0.0000     0.0000  0.0000  BitBrick
+bb12/mult_22                         0.0000      0.0    0.0000     0.0000  0.0000  *MULT_TC_OP_3_3_4
+bb12/mult_22/*cell*247               0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult_A_width3_B_width3
+bb13                                 0.0000      0.0    0.0000     0.0000  0.0000  BitBrick
+bb13/mult_22                         0.0000      0.0    0.0000     0.0000  0.0000  *MULT_TC_OP_3_3_4
+bb13/mult_22/*cell*257               0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult_A_width3_B_width3
+bb14                                 0.0000      0.0    0.0000     0.0000  0.0000  BitBrick
+bb14/mult_22                         0.0000      0.0    0.0000     0.0000  0.0000  *MULT_TC_OP_3_3_4
+bb14/mult_22/*cell*267               0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult_A_width3_B_width3
+bb15                                 0.0000      0.0    0.0000     0.0000  0.0000  BitBrick
+bb15/mult_22                         0.0000      0.0    0.0000     0.0000  0.0000  *MULT_TC_OP_3_3_4
+bb15/mult_22/*cell*277               0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult_A_width3_B_width3
+bb2                                  0.0000      0.0    0.0000     0.0000  0.0000  BitBrick
+bb2/mult_22                          0.0000      0.0    0.0000     0.0000  0.0000  *MULT_TC_OP_3_3_4
+bb2/mult_22/*cell*147                0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult_A_width3_B_width3
+bb3                                  0.0000      0.0    0.0000     0.0000  0.0000  BitBrick
+bb3/mult_22                          0.0000      0.0    0.0000     0.0000  0.0000  *MULT_TC_OP_3_3_4
+bb3/mult_22/*cell*157                0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult_A_width3_B_width3
+bb4                                  0.0000      0.0    0.0000     0.0000  0.0000  BitBrick
+bb4/mult_22                          0.0000      0.0    0.0000     0.0000  0.0000  *MULT_TC_OP_3_3_4
+bb4/mult_22/*cell*167                0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult_A_width3_B_width3
+bb5                                  0.0000      0.0    0.0000     0.0000  0.0000  BitBrick
+bb5/mult_22                          0.0000      0.0    0.0000     0.0000  0.0000  *MULT_TC_OP_3_3_4
+bb5/mult_22/*cell*177                0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult_A_width3_B_width3
+bb6                                  0.0000      0.0    0.0000     0.0000  0.0000  BitBrick
+bb6/mult_22                          0.0000      0.0    0.0000     0.0000  0.0000  *MULT_TC_OP_3_3_4
+bb6/mult_22/*cell*187                0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult_A_width3_B_width3
+bb7                                  0.0000      0.0    0.0000     0.0000  0.0000  BitBrick
+bb7/mult_22                          0.0000      0.0    0.0000     0.0000  0.0000  *MULT_TC_OP_3_3_4
+bb7/mult_22/*cell*197                0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult_A_width3_B_width3
+bb8                                  0.0000      0.0    0.0000     0.0000  0.0000  BitBrick
+bb8/mult_22                          0.0000      0.0    0.0000     0.0000  0.0000  *MULT_TC_OP_3_3_4
+bb8/mult_22/*cell*207                0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult_A_width3_B_width3
+bb9                                  0.0000      0.0    0.0000     0.0000  0.0000  BitBrick
+bb9/mult_22                          0.0000      0.0    0.0000     0.0000  0.0000  *MULT_TC_OP_3_3_4
+bb9/mult_22/*cell*217                0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult_A_width3_B_width3
+--------------------------------  ---------  -------  --------  ---------  ------  ---------------------------
+Total                                                   0.0000     0.0000  0.0000
+
+1

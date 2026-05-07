@@ -1,0 +1,11 @@
+
+redirect -tee report_violator.rpt {report_constraint -all_violators}
+
+#timing
+redirect -tee report_timing.rpt {report_timing -max_paths 5}
+
+#power
+report_power -hierarchy > report_power.rpt
+
+#area
+report_area -hierarchy > report_area.rpt

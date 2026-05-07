@@ -1,0 +1,73 @@
+Warning: The following library cells don't have power description:pfeed10000  pfeed05000  pfeed01000  pfeed00200  pfeed00100  pfeed00050  pfeed00010  pfeed00005  pfrelr   (PWR-682)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : F_PE
+Version: L-2016.03-SP1
+Date   : Thu Jun 26 23:49:49 2025
+****************************************
+
+
+Library(s) Used:
+
+    cb13fs120_tsmc_max (File: /home/IC/Desktop/eda_design/icc/ref/db/sc_max.db)
+    cb13io320_tsmc_max (File: /home/IC/Desktop/eda_design/icc/ref/db/io_max.db)
+
+
+Operating Conditions: cb13fs120_tsmc_max   Library: cb13fs120_tsmc_max
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+F_PE                   140000            cb13fs120_tsmc_max
+BitBrick_8             ForQA             cb13fs120_tsmc_max
+BitBrick_9             ForQA             cb13fs120_tsmc_max
+BitBrick_10            ForQA             cb13fs120_tsmc_max
+BitBrick_11            ForQA             cb13fs120_tsmc_max
+BitBrick_12            ForQA             cb13fs120_tsmc_max
+BitBrick_13            ForQA             cb13fs120_tsmc_max
+BitBrick_14            ForQA             cb13fs120_tsmc_max
+BitBrick_15            ForQA             cb13fs120_tsmc_max
+BitBrick_0             ForQA             cb13fs120_tsmc_max
+BitBrick_1             ForQA             cb13fs120_tsmc_max
+BitBrick_2             ForQA             cb13fs120_tsmc_max
+BitBrick_3             ForQA             cb13fs120_tsmc_max
+BitBrick_4             ForQA             cb13fs120_tsmc_max
+BitBrick_5             ForQA             cb13fs120_tsmc_max
+BitBrick_6             ForQA             cb13fs120_tsmc_max
+BitBrick_7             ForQA             cb13fs120_tsmc_max
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+F_PE                                      0.184  164.236 1.72e+07  164.437 100.0
+  bb8 (BitBrick_7)                     1.01e-03 5.28e-03 2.24e+05 6.52e-03   0.0
+  bb9 (BitBrick_6)                     9.73e-04 5.12e-03 2.24e+05 6.32e-03   0.0
+  bb10 (BitBrick_5)                    1.09e-03 5.32e-03 2.24e+05 6.64e-03   0.0
+  bb11 (BitBrick_4)                    2.14e-03 7.59e-03 3.23e+05 1.00e-02   0.0
+  bb12 (BitBrick_3)                    1.97e-03 6.79e-03 3.21e+05 9.08e-03   0.0
+  bb13 (BitBrick_2)                    2.18e-03 6.78e-03 3.24e+05 9.28e-03   0.0
+  bb14 (BitBrick_1)                    2.32e-03 7.05e-03 3.27e+05 9.69e-03   0.0
+  bb15 (BitBrick_0)                    1.91e-03 8.86e-03 4.37e+05 1.12e-02   0.0
+  bb0 (BitBrick_15)                    1.35e-03 7.78e-03 4.36e+05 9.57e-03   0.0
+  bb1 (BitBrick_14)                    1.55e-03 6.51e-03 3.16e+05 8.38e-03   0.0
+  bb2 (BitBrick_13)                    1.02e-03 5.28e-03 2.24e+05 6.53e-03   0.0
+  bb3 (BitBrick_12)                    1.78e-03 7.26e-03 3.16e+05 9.36e-03   0.0
+  bb4 (BitBrick_11)                    1.84e-03 5.96e-03 3.21e+05 8.12e-03   0.0
+  bb5 (BitBrick_10)                    2.13e-03 7.31e-03 4.36e+05 9.88e-03   0.0
+  bb6 (BitBrick_9)                     1.22e-03 5.20e-03 2.24e+05 6.64e-03   0.0
+  bb7 (BitBrick_8)                     2.02e-03 7.33e-03 3.19e+05 9.66e-03   0.0
+1

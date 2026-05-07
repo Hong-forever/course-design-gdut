@@ -1,0 +1,22 @@
+module BitBrick(
+	input [1:0] a,
+	input [1:0] b,
+	input s_a,
+	input s_b,
+	output [3:0] product
+);
+
+wire [2:0] a_ext,b_ext;
+wire [5:0] temp_product;
+
+assign a_ext[2] = s_a & a[1];
+assign a_ext[1:0] = a[1:0];
+
+assign b_ext[2] = s_b & b[1];
+assign b_ext[1:0] = b[1:0];
+
+assign temp_product = $signed(a_ext) * $signed(b_ext);
+assign product = temp_product[3:0];
+
+  
+endmodule

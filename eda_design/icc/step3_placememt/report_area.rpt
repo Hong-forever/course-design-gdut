@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : area
+Design : F_PE
+Version: L-2016.03-SP1
+Date   : Thu Jun 26 23:49:49 2025
+****************************************
+
+Library(s) Used:
+
+    cb13fs120_tsmc_max (File: /home/IC/Desktop/eda_design/icc/ref/db/sc_max.db)
+    cb13io320_tsmc_max (File: /home/IC/Desktop/eda_design/icc/ref/db/io_max.db)
+
+Number of ports:                           37
+Number of nets:                           703
+Number of cells:                          529
+Number of combinational cells:            355
+Number of sequential cells:               158
+Number of macros/black boxes:               0
+Number of buf/inv:                         46
+Number of references:                      39
+
+Combinational area:             127586.338135
+Buf/Inv area:                   126816.088135
+Noncombinational area:            1774.750000
+Macro/Black Box area:                0.000000
+Net Interconnect area:             774.495626
+
+Total cell area:                129361.088135
+Total area:                     130135.583761
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area             Local cell area
+                                  --------------------  ------------------------------ 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-  Black-
+                                  Total        Total    national     national   boxes   Design
+--------------------------------  -----------  -------  -----------  ---------  ------  -----------
+F_PE                              129361.0881    100.0  127312.3381  1189.7500  0.0000  F_PE
+bb0                                   74.0000      0.1      29.0000    45.0000  0.0000  BitBrick_15
+bb1                                   55.0000      0.0      17.5000    37.5000  0.0000  BitBrick_14
+bb10                                  38.5000      0.0       8.5000    30.0000  0.0000  BitBrick_5
+bb11                                  56.5000      0.0      19.0000    37.5000  0.0000  BitBrick_4
+bb12                                  55.0000      0.0      17.5000    37.5000  0.0000  BitBrick_3
+bb13                                  55.7500      0.0      18.2500    37.5000  0.0000  BitBrick_2
+bb14                                  56.5000      0.0      19.0000    37.5000  0.0000  BitBrick_1
+bb15                                  74.0000      0.1      29.0000    45.0000  0.0000  BitBrick_0
+bb2                                   38.5000      0.0       8.5000    30.0000  0.0000  BitBrick_13
+bb3                                   55.0000      0.0      17.5000    37.5000  0.0000  BitBrick_12
+bb4                                   55.0000      0.0      17.5000    37.5000  0.0000  BitBrick_11
+bb5                                   74.0000      0.1      29.0000    45.0000  0.0000  BitBrick_10
+bb6                                   38.5000      0.0       8.5000    30.0000  0.0000  BitBrick_9
+bb7                                   55.7500      0.0      18.2500    37.5000  0.0000  BitBrick_8
+bb8                                   38.5000      0.0       8.5000    30.0000  0.0000  BitBrick_7
+bb9                                   38.5000      0.0       8.5000    30.0000  0.0000  BitBrick_6
+--------------------------------  -----------  -------  -----------  ---------  ------  -----------
+Total                                                   127586.3381  1774.7500  0.0000
+
+1

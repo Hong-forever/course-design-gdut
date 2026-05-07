@@ -1,0 +1,324 @@
+Warning: Clock network timing may not be up-to-date since only 83.333336 percentage of clock nets are routed. (TIM-233)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -slack_lesser_than 0.00
+        -max_paths 10
+Design : F_PE
+Version: L-2016.03-SP1
+Date   : Mon Jun 23 17:46:10 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: cb13fs120_tsmc_max   Library: cb13fs120_tsmc_max
+	Parasitic source    : LPE
+	Parasitic mode      : RealRVirtualC
+	Extraction mode     : MIN_MAX
+	Extraction derating : -40/25/125
+
+Information: Percent of Arnoldi-based delays =  7.84%
+
+  Startpoint: result_reg_15
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[15] (output port clocked by clk)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         1.22       1.22
+  result_reg_15/CP (sdnrq2)                0.00       1.22 r
+  result_reg_15/Q (sdnrq2)                 0.38       1.60 f
+  U160/ZN (invbd7)                         0.05 &     1.65 r
+  U173/ZN (invbdf)                         0.07 *     1.71 f
+  pad_res_15/PAD (pc3o05)                  1.90 *     3.62 f
+  result[15] (out)                         0.00 *     3.62 f
+  data arrival time                                   3.62
+
+  clock clk (rise edge)                    3.80       3.80
+  clock network delay (ideal)              0.00       3.80
+  clock uncertainty                       -0.10       3.70
+  output external delay                   -0.10       3.60
+  data required time                                  3.60
+  -----------------------------------------------------------
+  data required time                                  3.60
+  data arrival time                                  -3.62
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.02
+
+
+  Startpoint: result_reg_14
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[14] (output port clocked by clk)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         1.22       1.22
+  result_reg_14/CP (sdnrq2)                0.00       1.22 r
+  result_reg_14/Q (sdnrq2)                 0.38       1.60 f
+  U175/ZN (invbd7)                         0.05 &     1.65 r
+  U179/ZN (invbdf)                         0.07 *     1.71 f
+  pad_res_14/PAD (pc3o05)                  1.90 *     3.61 f
+  result[14] (out)                         0.00 *     3.61 f
+  data arrival time                                   3.61
+
+  clock clk (rise edge)                    3.80       3.80
+  clock network delay (ideal)              0.00       3.80
+  clock uncertainty                       -0.10       3.70
+  output external delay                   -0.10       3.60
+  data required time                                  3.60
+  -----------------------------------------------------------
+  data required time                                  3.60
+  data arrival time                                  -3.61
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: result_reg_9
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[9] (output port clocked by clk)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         1.22       1.22
+  result_reg_9/CP (sdnrq2)                 0.00       1.22 r
+  result_reg_9/Q (sdnrq2)                  0.38       1.60 f
+  U151/ZN (invbd7)                         0.05 &     1.65 r
+  U159/ZN (invbdf)                         0.07 *     1.71 f
+  pad_res_9/PAD (pc3o05)                   1.90 *     3.61 f
+  result[9] (out)                          0.00 *     3.61 f
+  data arrival time                                   3.61
+
+  clock clk (rise edge)                    3.80       3.80
+  clock network delay (ideal)              0.00       3.80
+  clock uncertainty                       -0.10       3.70
+  output external delay                   -0.10       3.60
+  data required time                                  3.60
+  -----------------------------------------------------------
+  data required time                                  3.60
+  data arrival time                                  -3.61
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: result_reg_13
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[13] (output port clocked by clk)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         1.22       1.22
+  result_reg_13/CP (sdnrq2)                0.00       1.22 r
+  result_reg_13/Q (sdnrq2)                 0.38       1.60 f
+  U187/ZN (invbd7)                         0.05 &     1.65 r
+  U188/ZN (invbdf)                         0.07 *     1.71 f
+  pad_res_13/PAD (pc3o05)                  1.90 *     3.61 f
+  result[13] (out)                         0.00 *     3.61 f
+  data arrival time                                   3.61
+
+  clock clk (rise edge)                    3.80       3.80
+  clock network delay (ideal)              0.00       3.80
+  clock uncertainty                       -0.10       3.70
+  output external delay                   -0.10       3.60
+  data required time                                  3.60
+  -----------------------------------------------------------
+  data required time                                  3.60
+  data arrival time                                  -3.61
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: result_reg_11
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[11] (output port clocked by clk)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         1.22       1.22
+  result_reg_11/CP (sdnrq2)                0.00       1.22 r
+  result_reg_11/Q (sdnrq2)                 0.38       1.60 f
+  U189/ZN (invbd7)                         0.05 &     1.65 r
+  U194/ZN (invbdf)                         0.07 *     1.71 f
+  pad_res_11/PAD (pc3o05)                  1.90 *     3.61 f
+  result[11] (out)                         0.00 *     3.61 f
+  data arrival time                                   3.61
+
+  clock clk (rise edge)                    3.80       3.80
+  clock network delay (ideal)              0.00       3.80
+  clock uncertainty                       -0.10       3.70
+  output external delay                   -0.10       3.60
+  data required time                                  3.60
+  -----------------------------------------------------------
+  data required time                                  3.60
+  data arrival time                                  -3.61
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: result_reg_12
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[12] (output port clocked by clk)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         1.22       1.22
+  result_reg_12/CP (sdnrq2)                0.00       1.22 r
+  result_reg_12/Q (sdnrq2)                 0.38       1.60 f
+  U149/ZN (invbd7)                         0.05 &     1.65 r
+  U150/ZN (invbdf)                         0.07 *     1.71 f
+  pad_res_12/PAD (pc3o05)                  1.90 *     3.61 f
+  result[12] (out)                         0.00 *     3.61 f
+  data arrival time                                   3.61
+
+  clock clk (rise edge)                    3.80       3.80
+  clock network delay (ideal)              0.00       3.80
+  clock uncertainty                       -0.10       3.70
+  output external delay                   -0.10       3.60
+  data required time                                  3.60
+  -----------------------------------------------------------
+  data required time                                  3.60
+  data arrival time                                  -3.61
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: result_reg_8
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[8] (output port clocked by clk)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         1.22       1.22
+  result_reg_8/CP (sdnrq2)                 0.00       1.22 r
+  result_reg_8/Q (sdnrq2)                  0.38       1.60 f
+  U195/ZN (invbd7)                         0.05 &     1.65 r
+  U196/ZN (invbdf)                         0.07 *     1.71 f
+  pad_res_8/PAD (pc3o05)                   1.90 *     3.61 f
+  result[8] (out)                          0.00 *     3.61 f
+  data arrival time                                   3.61
+
+  clock clk (rise edge)                    3.80       3.80
+  clock network delay (ideal)              0.00       3.80
+  clock uncertainty                       -0.10       3.70
+  output external delay                   -0.10       3.60
+  data required time                                  3.60
+  -----------------------------------------------------------
+  data required time                                  3.60
+  data arrival time                                  -3.61
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: result_reg_10
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[10] (output port clocked by clk)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         1.22       1.22
+  result_reg_10/CP (sdnrq2)                0.00       1.22 r
+  result_reg_10/Q (sdnrq2)                 0.38       1.60 f
+  U202/ZN (invbd7)                         0.05 &     1.65 r
+  U203/ZN (invbdf)                         0.07 *     1.71 f
+  pad_res_10/PAD (pc3o05)                  1.90 *     3.61 f
+  result[10] (out)                         0.00 *     3.61 f
+  data arrival time                                   3.61
+
+  clock clk (rise edge)                    3.80       3.80
+  clock network delay (ideal)              0.00       3.80
+  clock uncertainty                       -0.10       3.70
+  output external delay                   -0.10       3.60
+  data required time                                  3.60
+  -----------------------------------------------------------
+  data required time                                  3.60
+  data arrival time                                  -3.61
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: result_reg_2
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[2] (output port clocked by clk)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         1.22       1.22
+  result_reg_2/CP (sdnrq2)                 0.00       1.22 r
+  result_reg_2/Q (sdnrq2)                  0.37       1.59 f
+  U122/ZN (invbd7)                         0.05 &     1.64 r
+  U128/ZN (invbdf)                         0.07 *     1.71 f
+  pad_res_2/PAD (pc3o05)                   1.90 *     3.61 f
+  result[2] (out)                          0.00 *     3.61 f
+  data arrival time                                   3.61
+
+  clock clk (rise edge)                    3.80       3.80
+  clock network delay (ideal)              0.00       3.80
+  clock uncertainty                       -0.10       3.70
+  output external delay                   -0.10       3.60
+  data required time                                  3.60
+  -----------------------------------------------------------
+  data required time                                  3.60
+  data arrival time                                  -3.61
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: result_reg_1
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[1] (output port clocked by clk)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         1.22       1.22
+  result_reg_1/CP (sdnrq2)                 0.00       1.22 r
+  result_reg_1/Q (sdnrq2)                  0.37       1.59 f
+  U139/ZN (invbd7)                         0.05 &     1.64 r
+  U144/ZN (invbdf)                         0.07 *     1.71 f
+  pad_res_1/PAD (pc3o05)                   1.90 *     3.61 f
+  result[1] (out)                          0.00 *     3.61 f
+  data arrival time                                   3.61
+
+  clock clk (rise edge)                    3.80       3.80
+  clock network delay (ideal)              0.00       3.80
+  clock uncertainty                       -0.10       3.70
+  output external delay                   -0.10       3.60
+  data required time                                  3.60
+  -----------------------------------------------------------
+  data required time                                  3.60
+  data arrival time                                  -3.61
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+1

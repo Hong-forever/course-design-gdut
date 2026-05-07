@@ -1,0 +1,16 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -slack_lesser_than 0.00
+        -max_paths 10
+Design : F_PE
+Version: L-2016.03-SP1
+Date   : Mon Jun 23 17:39:53 2025
+****************************************
+
+Operating Conditions: cb13fs120_tsmc_max   Library: cb13fs120_tsmc_max
+No paths.
+
+1
