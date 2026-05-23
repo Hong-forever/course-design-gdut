@@ -30,5 +30,6 @@ clean:
 rebuild: clean all
 
 run: $(OBJ_DIR) $(TARGETS)
+	./$(TARGETS)
 
 .PHONY: all clean rebuild run

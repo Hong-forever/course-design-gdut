@@ -90,6 +90,37 @@ int** readMaze(const char* filename, int* size) {
 }
 
 // 迷宫求解函数
+void printPath(Stack* stack, int size, int** maze) {
+    char** pathMaze = (char**)malloc(size * sizeof(char*));
+    for (int i = 0; i < size; i++) {
+        pathMaze[i] = (char*)malloc(size * sizeof(char));
+        for (int j = 0; j < size; j++) {
+            if (maze[i][j] == 1) {
+                pathMaze[i][j] = '#';
+            } else {
+                pathMaze[i][j] = ' ';
+            }
+        }
+    }
+
+    for (int i = 0; i <= stack->top; i++) {
+        pathMaze[stack->data[i].x][stack->data[i].y] = '.';
+    }
+
+    printf("Path found by BOT:\n");
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            printf("%c ", pathMaze[i][j]);
+        }
+        printf("\n");
+    }
+
+    for (int i = 0; i < size; i++) {
+        free(pathMaze[i]);
+    }
+    free(pathMaze);
+}
+
 bool solveMaze(int** maze, int size) {
     // 定义四个移动方向: 上、右、下、左
     Position directions[4] = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
@@ -116,6 +147,7 @@ bool solveMaze(int** maze, int size) {
         // 如果到达终点
         if (x == size - 1 && y == size - 1) {
             printf("found the path!\n");
+            printPath(stack, size, maze);
             
             // 释放内存
             for (int i = 0; i < size; i++) {
@@ -160,6 +192,146 @@ bool solveMaze(int** maze, int size) {
     return false;
 }
 
+// --- QUEUE ---
+
+// 定义队列节点
+typedef struct QNode {
+    Position pos;
+    struct QNode* next;
+} QNode;
+
+// 定义队列结构
+typedef struct {
+    QNode *front, *rear;
+} Queue;
+
+// 队列操作函数
+Queue* createQueue() {
+    Queue* q = (Queue*)malloc(sizeof(Queue));
+    q->front = q->rear = NULL;
+    return q;
+}
+
+void enqueue(Queue* q, Position pos) {
+    QNode* temp = (QNode*)malloc(sizeof(QNode));
+    temp->pos = pos;
+    temp->next = NULL;
+    if (q->rear == NULL) {
+        q->front = q->rear = temp;
+        return;
+    }
+    q->rear->next = temp;
+    q->rear = temp;
+}
+
+Position dequeue(Queue* q) {
+    if (q->front == NULL) return (Position){-1, -1};
+    QNode* temp = q->front;
+    Position pos = temp->pos;
+    q->front = q->front->next;
+    if (q->front == NULL) q->rear = NULL;
+    free(temp);
+    return pos;
+}
+
+bool isQueueEmpty(Queue* q) {
+    return q->front == NULL;
+}
+
+
+// 迷宫求解函数(最短)
+void solveMaze_Shortest(int** maze, int size) {
+    Position directions[4] = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
+
+    bool** visited = (bool**)malloc(size * sizeof(bool*));
+    Position** pred = (Position**)malloc(size * sizeof(Position*));
+    for (int i = 0; i < size; i++) {
+        visited[i] = (bool*)malloc(size * sizeof(bool));
+        pred[i] = (Position*)malloc(size * sizeof(Position));
+        for (int j = 0; j < size; j++) {
+            visited[i][j] = false;
+            pred[i][j] = (Position){-1, -1};
+        }
+    }
+
+    Queue* queue = createQueue();
+    enqueue(queue, (Position){0, 0});
+    visited[0][0] = true;
+
+    bool found = false;
+    while (!isQueueEmpty(queue)) {
+        Position current = dequeue(queue);
+        int x = current.x;
+        int y = current.y;
+
+        if (x == size - 1 && y == size - 1) {
+            found = true;
+            break;
+        }
+
+        for (int i = 0; i < 4; i++) {
+            int newX = x + directions[i].x;
+            int newY = y + directions[i].y;
+
+            if (newX >= 0 && newX < size && newY >= 0 && newY < size &&
+                maze[newX][newY] == 0 && !visited[newX][newY]) {
+                
+                enqueue(queue, (Position){newX, newY});
+                visited[newX][newY] = true;
+                pred[newX][newY] = current;
+            }
+        }
+    }
+
+    if (found) {
+        printf("\nShortest path found:\n");
+        char** pathMaze = (char**)malloc(size * sizeof(char*));
+        for (int i = 0; i < size; i++) {
+            pathMaze[i] = (char*)malloc(size * sizeof(char));
+            for (int j = 0; j < size; j++) {
+                pathMaze[i][j] = (maze[i][j] == 1) ? '#' : ' ';
+            }
+        }
+
+        int pathLen = 0;
+        Position crawl = {size - 1, size - 1};
+        while (crawl.x != -1 && crawl.y != -1) {
+            pathMaze[crawl.x][crawl.y] = '.';
+            crawl = pred[crawl.x][crawl.y];
+            pathLen++;
+        }
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                printf("%c ", pathMaze[i][j]);
+            }
+            printf("\n");
+        }
+        printf("Shortest path length: %d\n", pathLen);
+
+        for (int i = 0; i < size; i++) {
+            free(pathMaze[i]);
+        }
+        free(pathMaze);
+
+    } else {
+        printf("\nNo path found.\n");
+    }
+
+    // Free memory
+    for (int i = 0; i < size; i++) {
+        free(visited[i]);
+        free(pred[i]);
+    }
+    free(visited);
+    free(pred);
+    // Free queue memory
+    while(!isQueueEmpty(queue)) {
+        dequeue(queue);
+    }
+    free(queue);
+}
+
 // 主函数
 int main() {
     int n;
@@ -173,10 +345,13 @@ int main() {
         }
         printf("\n");
     }
+    printf("\n");
 
     if (!solveMaze(maze, n)) {
         printf("CANNOT find the path\n");
     }
+
+    solveMaze_Shortest(maze, n);
 
     // 释放迷宫内存
     for (int i = 0; i < n; i++) {
