@@ -1,0 +1,10 @@
+*.*
+*
+!*/
+!.gitignore
+!*.md
+!*.c
+!Makefile
+!*.png
+!*.txt
+!*.pdf
