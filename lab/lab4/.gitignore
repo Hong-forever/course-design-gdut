@@ -1,0 +1,13 @@
+*.*
+*
+!*/
+!.gitignore
+!*.md
+!*.c
+!Makefile
+!*.png
+!*.txt
+!*.pdf
+!*.csv
+!*.ipynb
+!*.html
